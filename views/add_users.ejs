@@ -1,0 +1,32 @@
+<%- include('layout/header.ejs') %>
+
+<div class="card mb-3 m-auto mt-5" style="max-width: 30rem;">
+    <div class="card-header text-bg-primary">
+        <h2 class="m-2"> Add new user</h2>
+    </div>
+    <div class="card-body ">
+        <form method="post" id="add-form" enctype="multipart/form-data">
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Name </label>
+                <input type="text" name="name" class="form-control" id="exampleFormControlInput1" placeholder="Enter your name" required>
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Email </label>
+                <input type="text" name="email" class="form-control" id="exampleFormControlInput1" placeholder="Enter your email" required>
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Phone </label>
+                <input type="text" name="phone" class="form-control" id="exampleFormControlInput1" placeholder="Enter your number phone" required>
+              </div>
+              <div class="mb-3">
+                <label for="formFile" class="form-label">Select image</label>
+                <input class="form-control" type="file" name="image" id="formFile" required>
+              </div>
+              <input class="btn w-100 btn-primary p-2 fs-5" type="submit" value="Add user">
+        </form>
+    </div>
+
+  </div>
+
+
+<%- include('layout/footer.ejs') %>
